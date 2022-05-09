@@ -45,6 +45,7 @@ font-family: 'Righteous', cursive;
    border-radius: 50%; 
 }
 
-#projects img{
-    
+#education img{
+    width: 200px;
+    height: 200px;
 }
