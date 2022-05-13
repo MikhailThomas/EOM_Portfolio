@@ -57,14 +57,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 300px;
     object-fit: cover;
 }
-/*
-- Transition do provide ways to control the speed of our animation when changing CSS properties.
-- Transform-style: This property will verify
-if the children of an element are positioned
-in the 3d space or 2d.
-The value: preserve-3d state that the children
-of an element should be placed in the 3d - space
-*/
 
 #cardContainer{
     width: 200px;
@@ -78,15 +70,11 @@ of an element should be placed in the 3d - space
     transition: transform 0.5s;
     transform-style: preserve-3d;
 }
-/* Will focus on horizontal flip card */
-/*
-It easy to rotate an html element by using
-the rotate() function from transform
-*/
+
     #cardContainer:hover #card{
         transform: rotateY(180deg);
     }
-/* Positioning card front and card back*/
+
     #front,#back{
         position: absolute;
         width: 200px;
@@ -113,6 +101,7 @@ the rotate() function from transform
     width: auto;
     height: auto;
     margin: auto;
+    max-width: 500px;
 }
 
 
