@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Righteous&display=swap');
 
+html,body{
+    overflow-x: hidden;
+}
 
 /* landing */
 #landing {
@@ -12,7 +15,6 @@
     background-position: center;
     background-attachment: fixed;
 }
-
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Bebas Neue', cursive;
@@ -50,25 +52,14 @@ h1, h2, h3, h4, h5, h6 {
     background-position: center;
 }
 
-.testimonial-image{
-    border-radius: 50%;
-    width: 300px;
-    height: auto;
-    aspect-ratio: 1;
-   
-    }
-
-.carousel-inner {
+#test-img{
+    width: 200px;
+    height: 300px;
     
 }
 
 /* projects */
 
-#projects img{
-    width: auto;
-    height: auto;
-    
-}
 
 .modal-content{
     width: 500px;
