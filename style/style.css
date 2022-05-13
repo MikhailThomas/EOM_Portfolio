@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Righteous&display=swap');
 
-html,body{
+/* html,body{
     overflow-x: hidden;
-}
+} */
 
 /* landing */
 #landing {
@@ -55,18 +55,67 @@ h1, h2, h3, h4, h5, h6 {
 #test-img{
     width: 200px;
     height: 300px;
-    
+    object-fit: cover;
 }
+/*
+- Transition do provide ways to control the speed of our animation when changing CSS properties.
+- Transform-style: This property will verify
+if the children of an element are positioned
+in the 3d space or 2d.
+The value: preserve-3d state that the children
+of an element should be placed in the 3d - space
+*/
+
+#cardContainer{
+    width: 200px;
+    height: 300px;
+}
+#card {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+/* Will focus on horizontal flip card */
+/*
+It easy to rotate an html element by using
+the rotate() function from transform
+*/
+    #cardContainer:hover #card{
+        transform: rotateY(180deg);
+    }
+/* Positioning card front and card back*/
+    #front,#back{
+        position: absolute;
+        width: 200px;
+        height: 300px;
+        border-radius: 0%;
+        backface-visibility: hidden;
+    }
+
+    #back{
+        color: white;
+        background-color: black;
+        transform: rotateY(180deg);
+        
+    }
+
+    #front {
+        background-color: gold;
+    }
 
 /* projects */
 
 
 .modal-content{
-    width: 500px;
+    width: auto;
     height: auto;
     margin: auto;
-
 }
+
+
 
 
 /* work */
