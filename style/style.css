@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Righteous&display=swap');
 
-/* html,body{
-    overflow-x: hidden;
-} */
 
 /* landing */
 #landing {
@@ -45,67 +42,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* testimonials */
-#testimonials {
-    background-image: url(https://wallpaperaccess.com/full/39631.jpg);
+#carouselindicators{
+    background-image:linear-gradient(rgba(10, 8, 8, 0.45),
+    rgba(240, 191, 76, 0.45)), url(https://i.pinimg.com/originals/38/92/dd/3892ddc66d8112551b93a9abf4e53d17.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-size: auto;
+    background-attachment: fixed;
+    min-height: 600px;
 }
-
-#test-img{
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-}
-
-#cardContainer{
-    width: 200px;
-    height: 300px;
-}
-#card {
-    width: 200px;
-    height: 300px;
-    position: relative;
-    text-align: center;
-    transition: transform 0.5s;
-    transform-style: preserve-3d;
-}
-
-    #cardContainer:hover #card{
-        transform: rotateY(180deg);
-    }
-
-    #front,#back{
-        position: absolute;
-        width: 200px;
-        height: 300px;
-        border-radius: 0%;
-        backface-visibility: hidden;
-    }
-
-    #back{
-        color: white;
-        background-color: black;
-        transform: rotateY(180deg);
-        
-    }
-
-    #front {
-        background-color: gold;
-    }
 
 /* projects */
 
-
-.modal-content{
-    width: auto;
-    height: auto;
-    margin: auto;
-    max-width: 500px;
+#projects{
+    width: 100%;
 }
 
+.modal-content{
+    justify-content: space-between;
+}
 
+#project-img-4{
+    height: 100%;
+}
 
+#project-img-3{
+    height: 100%;
+}
 
 /* work */
 #work img {
